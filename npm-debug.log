@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mysql' ]
+2 info using npm@4.0.5
+3 info using node@v7.4.0
+4 verbose config Skipping project config: /Users/ANJUBAO/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData mysql
+9 silly fetchNamedPackageData mysql
+10 silly mapToRegistry name mysql
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'mysql',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'mysql',
+13 silly mapToRegistry   name: 'mysql',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/mysql
+15 verbose request uri https://registry.npmjs.org/mysql
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 15:04:34
+18 verbose request id d0eb4657033158e9
+19 http request GET https://registry.npmjs.org/mysql
+20 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+21 info attempt registry request try #2 at 15:04:44
+22 http request GET https://registry.npmjs.org/mysql
+23 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+24 info attempt registry request try #3 at 15:05:44
+25 http request GET https://registry.npmjs.org/mysql
+26 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=Parse Error
+26 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+26 silly fetchPackageMetaData     at Object.onceWrapper (events.js:290:19)
+26 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+26 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+26 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:367:9)
+26 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+26 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+26 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:176:18)
+26 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:134:10)
+26 silly fetchPackageMetaData     at TCP.onread (net.js:551:20)
+26 silly fetchPackageMetaData  error for mysql { Error: tunneling socket could not be established, cause=Parse Error
+26 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+26 silly fetchPackageMetaData     at Object.onceWrapper (events.js:290:19)
+26 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+26 silly fetchPackageMetaData     at ClientRequest.emit (events.js:188:7)
+26 silly fetchPackageMetaData     at Socket.socketOnData (_http_client.js:367:9)
+26 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+26 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+26 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:176:18)
+26 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:134:10)
+26 silly fetchPackageMetaData     at TCP.onread (net.js:551:20) code: 'ECONNRESET' }
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: tunneling socket could not be established, cause=Parse Error
+31 verbose stack     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+31 verbose stack     at Object.onceWrapper (events.js:290:19)
+31 verbose stack     at emitOne (events.js:96:13)
+31 verbose stack     at ClientRequest.emit (events.js:188:7)
+31 verbose stack     at Socket.socketOnData (_http_client.js:367:9)
+31 verbose stack     at emitOne (events.js:96:13)
+31 verbose stack     at Socket.emit (events.js:188:7)
+31 verbose stack     at readableAddChunk (_stream_readable.js:176:18)
+31 verbose stack     at Socket.Readable.push (_stream_readable.js:134:10)
+31 verbose stack     at TCP.onread (net.js:551:20)
+32 verbose cwd /Users/ANJUBAO/Demo/NodeJs/appCrashCollectedServer
+33 error Darwin 17.4.0
+34 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "mysql"
+35 error node v7.4.0
+36 error npm  v4.0.5
+37 error code ECONNRESET
+38 error network tunneling socket could not be established, cause=Parse Error
+39 error network This is most likely not a problem with npm itself
+39 error network and is related to network connectivity.
+39 error network In most cases you are behind a proxy or have bad network settings.
+39 error network
+39 error network If you are behind a proxy, please make sure that the
+39 error network 'proxy' config is set properly.  See: 'npm help config'
+40 verbose exit [ 1, true ]
